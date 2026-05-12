@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProviXion S.A.S. | Dotación Empresarial & Seguridad Industrial</title>
+    <link rel="icon" type="image/png" href="assets/Img_X.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="loading">
+
+    <!-- ══ LOADING SCREEN ══ -->
+    <div id="loader">
+        <div class="loader-logo-wrap">
+            <img src="assets/Logo_PX.png" alt="ProviXion" class="loader-logo-img">
+        </div>
+        <div class="loader-bar-wrap">
+            <div id="loaderProgress"></div>
+        </div>
+        <p class="loader-tagline">Dotación Empresarial &amp; Seguridad Industrial</p>
+    </div>
+    <!-- X explosion layer -->
+    <div id="xBlast" class="x-blast">
+        <img src="assets/Img_X.png" alt="X" class="x-blast-img">
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" id="logoNav">
+                <span class="logo-provi">Provi</span><span class="logo-x">X</span><span class="logo-ion">ion</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#inicio" class="nav-link active">INICIO</a></li>
+                <li><a href="#nosotros" class="nav-link">NOSOTROS</a></li>
+                <li><a href="#productos" class="nav-link">PRODUCTOS</a></li>
+                <li><a href="#servicios" class="nav-link">SERVICIOS</a></li>
+                <li><a href="#contacto" class="nav-link">CONTACTO</a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="https://wa.me/573112882205" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#inicio" class="mobile-link">INICIO</a>
+        <a href="#nosotros" class="mobile-link">NOSOTROS</a>
+        <a href="#productos" class="mobile-link">PRODUCTOS</a>
+        <a href="#servicios" class="mobile-link">SERVICIOS</a>
+        <a href="#contacto" class="mobile-link">CONTACTO</a>
+    </div>
+
+    <!-- ══ HERO ══ -->
+    <section id="inicio" class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('assets/Hero.png')"></div>
+            <div class="slide" style="background-image: url('')"></div>
+            <div class="slide" style="background-image: url('')"></div>
+            <div class="slide" style="background-image: url('')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">ProviXion S.A.S.</div>
+            <h1 class="hero-title">Dotación Cuidado<br>&amp; Seguridad Industrial</h1>
+            <p class="hero-subtitle">Diseño &nbsp;·&nbsp; Calidad &nbsp;·&nbsp; Protección &nbsp;·&nbsp; Confianza</p>
+            <div class="hero-ctas">
+                <a href="#productos" class="hero-btn hero-btn-primary">Ver Productos</a>
+                <a href="#contacto" class="hero-btn hero-btn-outline">Contáctenos</a>
+            </div>
+        </div>
+        <button class="slider-arrow slider-prev" id="sliderPrev"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-arrow slider-next" id="sliderNext"><i class="fas fa-chevron-right"></i></button>
+        <div class="scroll-down"><i class="fas fa-chevron-down"></i></div>
+    </section>
+
+    <!-- ══ PRODUCT LIST (parallax bg) ══ -->
+    <section id="productos-lista" class="product-list-section">
+        <div class="product-list-bg" style="background-image: url('assets/Products.png')"></div>
+        <div class="product-list-overlay"></div>
+        <div class="product-list-content">
+            <p class="product-list-eyebrow">Nuestras Prendas</p>
+            <ul class="product-list" id="productList">
+                <li class="product-item" data-index="0"><span class="product-name">Camisa en Jean</span></li>
+                <li class="product-item" data-index="1"><span class="product-name">Pantalón en Jean</span></li>
+                <li class="product-item" data-index="2"><span class="product-name">Chaqueta Chaleco Acolchado</span></li>
+                <li class="product-item" data-index="3"><span class="product-name">Chaqueta Enguatada</span></li>
+                <li class="product-item" data-index="4"><span class="product-name">Chaqueta en Jean</span></li>
+                <li class="product-item" data-index="5"><span class="product-name">Botas de Seguridad</span></li>
+                <li class="product-item" data-index="6"><span class="product-name">Overol en Drill</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ══ COLLECTION GALLERY ══ -->
+    <section id="productos" class="collection-section">
+        <div class="collection-header">
+            <h3>Colección de prendas</h3>
+        </div>
+        <div class="collection-slider-wrapper">
+            <button class="collection-arrow collection-prev" id="collectionPrev"><i class="fas fa-chevron-left"></i></button>
+            <div class="collection-slider" id="collectionSlider">
+                <div class="collection-track" id="collectionTrack">
+                    <div class="collection-item">
+                        <div class="collection-img"><img src="" alt="Camisa en Jean" class="collection-img-src" id="colImg1"></div>
+                        <span class="collection-label">Camisa en Jean</span>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-img"><img src="" alt="Pantalón en Jean" class="collection-img-src" id="colImg2"></div>
+                        <span class="collection-label">Pantalón en Jean</span>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-img"><img src="" alt="Chaqueta Chaleco Acolchado" class="collection-img-src" id="colImg3"></div>
+                        <span class="collection-label">Chaqueta Chaleco Acolchado</span>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-img"><img src="" alt="Chaqueta Enguatada" class="collection-img-src" id="colImg4"></div>
+                        <span class="collection-label">Chaqueta Enguatada</span>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-img"><img src="" alt="Chaqueta en Jean" class="collection-img-src" id="colImg5"></div>
+                        <span class="collection-label">Chaqueta en Jean</span>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-img"><img src="" alt="Botas de Seguridad" class="collection-img-src" id="colImg6"></div>
+                        <span class="collection-label">Botas de Seguridad</span>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-img"><img src="" alt="Overol en Drill" class="collection-img-src" id="colImg7"></div>
+                        <span class="collection-label">Overol en Drill</span>
+                    </div>
+                </div>
+            </div>
+            <button class="collection-arrow collection-next" id="collectionNext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- ══ PROTECTION ELEMENTS ══ -->
+    <section class="protection-section">
+        <div class="collection-header">
+            <h3>Elementos de protección</h3>
+        </div>
+        <div class="collection-slider-wrapper">
+            <button class="collection-arrow collection-prev" id="protectionPrev"><i class="fas fa-chevron-left"></i></button>
+            <div class="collection-slider" id="protectionSlider">
+                <div class="collection-track" id="protectionTrack">
+                    <div class="collection-item">
+                        <div class="collection-img"><img src="" alt="Casco de Seguridad" class="collection-img-src" id="protImg1"></div>
+                        <span class="collection-label">Casco de Seguridad</span>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-img"><img src="" alt="Guantes Carnaza" class="collection-img-src" id="protImg2"></div>
+                        <span class="collection-label">Guantes Carnaza</span>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-img"><img src="" alt="Gafas de Seguridad" class="collection-img-src" id="protImg3"></div>
+                        <span class="collection-label">Gafas de Seguridad</span>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-img"><img src="" alt="Respirador Media Cara" class="collection-img-src" id="protImg4"></div>
+                        <span class="collection-label">Respirador Media Cara</span>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-img"><img src="" alt="Extintor" class="collection-img-src" id="protImg5"></div>
+                        <span class="collection-label">Extintores</span>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-img"><img src="" alt="Chaleco Reflectivo" class="collection-img-src" id="protImg6"></div>
+                        <span class="collection-label">Chaleco Reflectivo</span>
+                    </div>
+                </div>
+            </div>
+            <button class="collection-arrow collection-next" id="protectionNext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- ══ SERVICES (parallax bg) ══ -->
+    <section id="servicios" class="services-section">
+        <div class="services-bg" id="servicesBg" style="background-image: url('assets/IMG_0137.PNG')"></div>
+        <div class="services-overlay"></div>
+        <div class="services-content">
+            <h2>Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-item reveal-target">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h4>Diseño Personalizado</h4>
+                    <p>Dotaciones con imagen corporativa adaptadas a su marca</p>
+                </div>
+                <div class="service-item reveal-target">
+                    <i class="fas fa-truck"></i>
+                    <h4>Distribución Nacional</h4>
+                    <p>Entrega en todo el territorio colombiano</p>
+                </div>
+                <div class="service-item reveal-target">
+                    <i class="fas fa-clipboard-check"></i>
+                    <h4>Asesoría Técnica</h4>
+                    <p>Selección de EPP según normativa vigente</p>
+                </div>
+                <div class="service-item reveal-target">
+                    <i class="fas fa-certificate"></i>
+                    <h4>Productos Certificados</h4>
+                    <p>Cumplimiento de normas de seguridad industrial</p>
+                </div>
+                <div class="service-item reveal-target">
+                    <i class="fas fa-users"></i>
+                    <h4>Atención Personalizada</h4>
+                    <p>Asesor dedicado por cada cliente</p>
+                </div>
+                <div class="service-item reveal-target">
+                    <i class="fas fa-sync-alt"></i>
+                    <h4>Reposición Garantizada</h4>
+                    <p>Inventario siempre disponible y al día</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ NOSOTROS OVERLAY — REESTRUCTURADO ══ -->
+    <div id="nosotros" class="overlay-page">
+        <section class="nosotros-layout">
+            <!-- Left: Sticky image -->
+            <div class="nosotros-image-wrap">
+                <div class="nosotros-image-sticky">
+                    <img src="assets/holaa.jpg" alt="Instalaciones ProviXion" id="aboutImg">
+                    <div class="about-img-overlay"></div>
+                </div>
+            </div>
+            
+            <!-- Right: Scrolling content -->
+            <div class="nosotros-content-wrap">
+                <!-- Quiénes somos -->
+                <div class="about-content-box">
+                    <div class="about-inner">
+                        <span class="section-eyebrow">Quiénes somos</span>
+                        <h2>Sobre Nosotros</h2>
+                        <p>En <strong>PROVIXION</strong> Brindamos soluciones integrales en el suministro de <strong>dotaciones empresariales e institucionales</strong>, garantizando altos estándares de calidad y cumplimiento.</p>
+                        <p>Nos distinguimos por nuestro compromiso con la innovación, la calidad de nuestros productos y la atención personalizada a cada cliente. Además, ofrecemos una amplia gama de elementos de protección personal y productos de aseo, asegurando ambientes laborales seguros, higiénicos y eficientes.</p>
+                        <div class="about-values">
+                            <div class="about-value reveal-target"><i class="fas fa-gem"></i><span>Excelencia</span></div>
+                            <div class="about-value reveal-target"><i class="fas fa-lightbulb"></i><span>Innovación</span></div>
+                            <div class="about-value reveal-target"><i class="fas fa-handshake"></i><span>Compromiso</span></div>
+                            <div class="about-value reveal-target"><i class="fas fa-star"></i><span>Calidad</span></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- MISIÓN & VISIÓN — Apiladas verticalmente -->
+                <div class="mv-section-nosotros">
+                    <div class="mv-card-nosotros mv-mision">
+                        <div class="mv-icon"><i class="fas fa-bullseye"></i></div>
+                        <h3>MISIÓN</h3>
+                        <p>En PROVIXION S.A.S. nos especializamos en el diseño, comercialización y distribución de dotaciones empresariales, accesorios, elementos de protección personal y productos de aseo, ofreciendo soluciones integrales que garantizan calidad, funcionalidad y presentación. Nuestro compromiso se fundamenta en la excelencia, la innovación, el cumplimiento y la atención personalizada, construyendo relaciones comerciales sólidas y sostenibles que aportan valor, confianza y respaldo a nuestros clientes en todo el territorio nacional.</p>
+                    </div>
+                    <div class="mv-card-nosotros mv-vision">
+                        <div class="mv-icon"><i class="fas fa-eye"></i></div>
+                        <h3>VISIÓN</h3>
+                        <p>Para el año 2028, PROVIXION S.A.S. se proyecta como una compañía líder y referente en el sector de dotaciones empresariales y soluciones integrales, con presencia estratégica en los principales mercados del país y una operación competitiva con alcance internacional. Aspiramos a consolidar la marca PROVIXION como sinónimo de calidad, innovación y confianza, fortaleciendo continuamente nuestros procesos comerciales, logísticos y corporativos, con el propósito de convertirnos en una organización multinacional reconocida por su excelencia y capacidad de expansión en mercados globales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer overlay-footer">
+            <div class="footer-content">
+                <div class="footer-left footer-anim-left">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-provi">Provi</span><span class="logo-x">X</span><span class="logo-ion">ion</span>
+                    </a>
+                    <p class="footer-desc">Dotación Empresarial &amp; Seguridad Industrial para todo Colombia.</p>
+                    <div class="footer-links">
+                        <a href="#nosotros">Nosotros</a>
+                        <a href="#contacto">Contacto</a>
+                    </div>
+                </div>
+                <div class="footer-right footer-anim-right">
+                    <h4>ENCUÉNTRANOS</h4>
+                    <div class="footer-social-links">
+                        <a href="https://wa.me/573112882205" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Copyright ProviXion S.A.S. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ══ CONTACTO OVERLAY ══ -->
+    <div id="contacto" class="overlay-page">
+        <section class="contact-section">
+            <div class="contact-bg" id="contactBg" style="background-image: url('assets/Hero.png')"></div>
+            <div class="contact-overlay"></div>
+            <div class="contact-content">
+                <div class="contact-left">
+                    <span class="section-eyebrow">Estamos para servirle</span>
+                    <h2>Contáctenos</h2>
+                    <p class="contact-desc">Comuníquese con nosotros y obtenga la mejor asesoría para su empresa. Respondemos en menos de 24 horas.</p>
+                    <div class="contact-info-list">
+                        <div class="contact-info-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div><span>WhatsApp</span><a href="https://wa.me/573112882205" target="_blank">+57 311 2882205</a></div>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div><span>Teléfono</span><a href="tel:+573112882205">+57 311 2882205</a></div>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div><span>Email</span><a href="mailto:info@provixion.com.co">info@provixion.com.co</a></div>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div><span>Dirección</span><p>Calle 10 #5-42, Neiva, Huila — Colombia</p></div>
+                        </div>
+                    </div>
+                    <div class="contact-social-row">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Envíenos un mensaje</h3>
+                        <div class="form-group"><input type="text" name="nombre" placeholder="Nombre completo" required></div>
+                        <div class="form-group"><input type="text" name="empresa" placeholder="Empresa"></div>
+                        <div class="form-row">
+                            <div class="form-group"><input type="email" name="email" placeholder="Correo electrónico" required></div>
+                            <div class="form-group"><input type="tel" name="telefono" placeholder="Teléfono" required></div>
+                        </div>
+                        <div class="form-group">
+                            <select name="interes">
+                                <option value="">¿En qué está interesado?</option>
+                                <option value="dotacion">Dotación Corporativa</option>
+                                <option value="epp">Elementos de Protección Personal</option>
+                                <option value="seguridad">Seguridad Industrial</option>
+                                <option value="extintores">Extintores y Contra Incendios</option>
+                                <option value="senalizacion">Señalización</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group"><textarea name="mensaje" rows="4" placeholder="Su mensaje..." required></textarea></div>
+                        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">            <div class="map-container">
+                <div class="map-label">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div><strong>Nuestra Ubicación</strong><span>Calle 10 #5-42, Neiva, Huila — Colombia</span></div>
+                </div>
+                <div class="map-frame">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15947.3!2d-75.2827!3d2.9273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b7484e61d29bf%3A0xced07e19ddf5f0b5!2sNeiva%2C+Huila!5e0!3m2!1ses!2sco!4v1700000000001" width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer overlay-footer">
+            <div class="footer-content">
+                <div class="footer-left footer-anim-left">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-provi">Provi</span><span class="logo-x">X</span><span class="logo-ion">ion</span>
+                    </a>
+                    <p class="footer-desc">Dotación Empresarial &amp; Seguridad Industrial para todo Colombia.</p>
+                    <div class="footer-links">
+                        <a href="#nosotros">Nosotros</a>
+                        <a href="#contacto">Contacto</a>
+                    </div>
+                </div>
+                <div class="footer-right footer-anim-right">
+                    <h4>ENCUÉNTRANOS</h4>
+                    <div class="footer-social-links">
+                        <a href="https://wa.me/573112882205" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Copyright ProviXion S.A.S. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ══ MAIN FOOTER ══ -->
+    <footer class="footer" id="mainFooter">
+        <div class="footer-content">
+            <div class="footer-left footer-anim-left">
+                <a href="#" class="footer-logo">
+                    <span class="logo-provi">Provi</span><span class="logo-x">X</span><span class="logo-ion">ion</span>
+                </a>
+                <p class="footer-desc">Dotación Empresarial &amp; Seguridad Industrial para todo Colombia.</p>
+                <div class="footer-links">
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </div>
+            <div class="footer-right footer-anim-right">
+                <h4>ENCUÉNTRANOS</h4>
+                <div class="footer-social-links">
+                    <a href="https://wa.me/573112882205" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Copyright ProviXion S.A.S. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ══ VIRTUAL ASSISTANT ══ -->
+    <div id="assistantWrapper" class="assistant-wrapper">
+        <!-- Desktop: Floating panel -->
+        <div id="assistantPanel" class="assistant-panel">
+            <div class="assistant-header">
+                <span class="assistant-title">ASISTENTE VIRTUAL</span>
+                <button id="assistantMinimize" class="assistant-minimize"><i class="fas fa-minus"></i></button>
+            </div>
+            <div class="assistant-scroll-area">
+                <div class="assistant-body">
+                    <div class="assistant-avatar-wrap">
+                        <img src="assets/AsistenteX.png" alt="Asistente X" class="assistant-avatar">
+                    </div>
+                    <div class="assistant-chat" id="assistantChat">
+                        <div class="chat-bubble assistant-bubble">
+                            <p>¡Hola! Soy <strong>X</strong>, tu asistente virtual de ProviXion. ¿En qué puedo ayudarte hoy?</p>
+                        </div>
+                    </div>
+                    <div class="assistant-quick-replies" id="quickReplies">
+                        <button class="quick-btn" data-msg="Cotización">Cotización</button>
+                        <button class="quick-btn" data-msg="Más información">Más información</button>
+                        <button class="quick-btn" data-msg="Nuestros productos">Nuestros productos</button>
+                        <button class="quick-btn" data-msg="Chatea conmigo">Chatea conmigo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="assistant-input-area">
+                <div class="assistant-input-wrap">
+                    <input type="text" id="assistantInput" placeholder="Escribe tu mensaje..." autocomplete="off">
+                    <button id="assistantSend"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Toggle button — NEGRO CON BORDE AZUL -->
+        <button id="assistantToggle" class="assistant-toggle">
+            <img src="assets/AsistenteX.png" alt="Asistente" class="assistant-toggle-img">
+            <span class="assistant-toggle-pulse"></span>
+        </button>
+    </div>
+    
+    <!-- Mobile: Full screen modal -->
+    <div id="assistantModal" class="assistant-modal">
+        <div class="assistant-modal-header">
+            <span class="assistant-title">ASISTENTE VIRTUAL</span>
+            <button id="assistantModalClose" class="assistant-modal-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="assistant-modal-scroll">
+            <div class="assistant-modal-body">
+                <div class="assistant-avatar-wrap mobile-avatar">
+                    <img src="assets/AsistenteX.png" alt="Asistente X" class="assistant-avatar">
+                </div>
+                <div class="assistant-chat mobile-chat" id="assistantChatMobile">
+                    <div class="chat-bubble assistant-bubble">
+                        <p>¡Hola! Soy <strong>X</strong>, tu asistente virtual de ProviXion. ¿En qué puedo ayudarte hoy?</p>
+                    </div>
+                </div>
+                <div class="assistant-quick-replies mobile-quick" id="quickRepliesMobile">
+                    <button class="quick-btn" data-msg="Cotización">Cotización</button>
+                    <button class="quick-btn" data-msg="Más información">Más información</button>
+                    <button class="quick-btn" data-msg="Nuestros productos">Nuestros productos</button>
+                    <button class="quick-btn" data-msg="Chatea conmigo">Chatea conmigo</button>
+                </div>
+            </div>
+        </div>
+        <div class="assistant-modal-footer">
+            <div class="assistant-input-wrap mobile-input">
+                <input type="text" id="assistantInputMobile" placeholder="Escribe tu mensaje..." autocomplete="off">
+                <button id="assistantSendMobile"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page dimmer -->
+    <div id="pageDimmer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
