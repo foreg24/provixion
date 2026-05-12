@@ -2,18 +2,15 @@
   "name": "provixion-web",
   "version": "1.0.0",
   "description": "ProviXion S.A.S. - Dotación Empresarial & Seguridad Industrial",
-  "main": "api/index.js",
-  "scripts": {
-    "start": "node api/index.js",
-    "dev": "nodemon api/index.js"
+  "main": "index.js",
+  "engines": {
+    "node": ">=18.x"
   },
-  "keywords": [
-    "dotacion",
-    "empresarial",
-    "seguridad-industrial",
-    "epp",
-    "colombia"
-  ],
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": ["dotacion", "empresarial", "seguridad-industrial", "epp", "colombia"],
   "author": "ProviXion S.A.S.",
   "license": "ISC",
   "dependencies": {
